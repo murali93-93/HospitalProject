@@ -1,0 +1,16 @@
+Spring:
+ config:
+  activate:
+   on-profile: "prod"
+
+build:
+ version: "1.0"    
+ 
+patient:
+ message: "welcome to hosipatal project Patient PROD APIS"
+ contactDetails: 
+  name: "Murali-PROD"
+  email: "murali.rajyam93@gmail.com"
+ oncallSuport:
+  - 91 9640096120
+  - 91 7993469612

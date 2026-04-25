@@ -1,0 +1,16 @@
+Spring:
+ config:
+  activate:
+   on-profile: "qa"
+   
+build:
+ version: "2.0"    
+ 
+patient:
+ message: "welcome to hosipatal project Patient QA APIS"
+ contactDetails: 
+  name: "Murali-QA"
+  email: "murali.rajyam93@gmail.com"
+ oncallSuport:
+  - 91 9640096120
+  - 91 7993469612

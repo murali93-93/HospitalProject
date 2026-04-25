@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: Doctor
+  
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #url: jdbc:mysql://localhost:3306/hospital_db
+    url: jdbc:mysql://host.docker.internal:3306/hospital_db
+    username: root
+    password: root
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 30000
+      connection-timeout: 20000
+      max-lifetime: 1800000
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  config:
+    import:
+    - "application_qa.yml"
+    - "application_prod.yml"  
+  profiles:
+    active:
+     - "prod"
+
+server:
+  port: 8082
+
+build:
+ version: "3.0"    
+
+doctors:
+ message: "welcome to hosipatal project doctor APIS"
+ contactDetails: 
+  name: "Murali-goud"
+  email: "murali.rajyam93@gmail.com"
+ oncallSuport:
+  - 91 9640096120
+  - 91 7993469612
